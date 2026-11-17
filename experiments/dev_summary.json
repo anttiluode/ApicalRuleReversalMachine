@@ -1,0 +1,80 @@
+{
+ "n": 6,
+ "need_90pct": 6,
+ "rules": {
+  "S1_sorted": {
+   "bodies": 6,
+   "pass": true
+  },
+  "C1_cut": {
+   "cut_R_sign_accuracy": 0.5119926199261993,
+   "cut_F_sign_accuracy": 1.0,
+   "cut_over_intact_R_size": 0.07126780263001495,
+   "cut_over_intact_F_size": 1.0003071946153295,
+   "pass": true
+  },
+  "I1_inference": {
+   "R_sign_accuracy": 0.8617754882320072,
+   "bayes": 0.9216145071658379,
+   "pass": true
+  },
+  "T1_transfer": {
+   "machine": 0.8846153846153846,
+   "plastic": 0.07417582417582418,
+   "bayes": 0.8516483516483516,
+   "machine_above_plastic": 6,
+   "pass": true
+  },
+  "B1_vs_plastic": {
+   "machine_mse": 0.09222727867093403,
+   "plastic_mse": 0.23883277059424657,
+   "machine_better": 6,
+   "pass": true
+  }
+ },
+ "report": {
+  "pred": {
+   "_acc_R": 0.8617754882320072,
+   "_acc_F": 1.0,
+   "_mse_bayes": 0.09222727867093403,
+   "_transfer": 0.8846153846153846,
+   "_absR": 0.525192216743232,
+   "_absF": 0.7524516060837805
+  },
+  "pred_cut": {
+   "_acc_R": 0.5119926199261993,
+   "_acc_F": 1.0,
+   "_mse_bayes": 0.33633301053947406,
+   "_transfer": 0.5934065934065934,
+   "_absR": 0.039722985719213635,
+   "_absF": 0.7529432185799896
+  },
+  "bayes": {
+   "_acc_R": 0.9216145071658379,
+   "_acc_F": 1.0,
+   "_mse_bayes": 0.0,
+   "_transfer": 0.8516483516483516,
+   "_absR": 0.6815716162656873,
+   "_absF": 0.7999999999999999
+  },
+  "plastic": {
+   "_acc_R": 0.8312240051612194,
+   "_acc_F": 0.8864401858304297,
+   "_mse_bayes": 0.23883277059424657,
+   "_transfer": 0.07417582417582418,
+   "_absR": 0.7021862627505562,
+   "_absF": 0.7980935481454805
+  },
+  "scalar": {
+   "_acc_R": 0.8846153846153846,
+   "_acc_F": 1.0,
+   "_mse_bayes": 0.06045865077855926,
+   "_transfer": 0.7692307692307693,
+   "_absR": 0.5847030001083898,
+   "_absF": 0.8226617527319893
+  },
+  "scalar_better_than_machine_mse": 6,
+  "transfer_events_median": 13.0
+ },
+ "all_rules_pass": true
+}
